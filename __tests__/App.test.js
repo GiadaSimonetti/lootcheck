@@ -1,7 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './components/App';
+import Adapter from 'enzyme-adapter-react-16'
+// import App from './App'
+import App from './src/components/App';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 describe ('App component', () => {
   const app = shallow(<App />);
+
+  it('renders properly', () => {
+    expect(app).toMatchSnapshot();
+  });
 });

@@ -2,24 +2,30 @@
   "name": "lootcheck",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "verbose": true
+  },
   "dependencies": {
-    "npm": "^6.0.0",
-    "react-redux": "^5.0.7",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "jest-enzyme": "^6.0.0",
+    "npm": "^6.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
-    "redux": "^4.0.0",
-    "sfcookies": "^1.0.2"
+    "react-test-renderer": "^16.3.2",
+    "sinon": "^5.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --watch",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "enzyme": "^3.3.0",
-    "jest-cli": "^20.0.4",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-test-renderer": "^16.3.2"
   }
 }
