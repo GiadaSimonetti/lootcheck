@@ -14,8 +14,8 @@ describe ('App component', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('contains a Wallet component', () => {
+  it('contains a connected Wallet component', () => {
     console.log(app.debug());
-    expect(app.find('Wallet').exists()).toBe(true);
+    expect(app.find('Connect(Wallet)').exists()).toBe(true);
   });
 });

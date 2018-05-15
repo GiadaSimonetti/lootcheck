@@ -7,7 +7,7 @@ class App extends Component {
       <div>
         <h1>Loot Check</h1>
         <hr />
-        <Connect(Wallet) />
+        <Wallet />
       </div>
     );
   };
